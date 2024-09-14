@@ -271,3 +271,15 @@ body {
 .ws,.wl {width: 94%;}
 
 }
+
+.fade-in {
+    opacity: 0;
+    transform: scale(0.9); /* 初期サイズを少し小さくする */
+    transition: opacity 1s ease-in, transform 1s ease-in, background-color 1s ease-in;
+}
+
+/* アニメーション後のスタイル */
+.fade-in.visible {
+    opacity: 1;
+    transform: scale(1); /* 元のサイズに戻す */
+}
